@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "@types/dom-view-transitions": "^1.0.6",
+    "vitepress": "^1.6.3",
+    "vitepress-sidebar": "^1.31.1"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "minisearch": "^7.1.2",
+    "vitepress-plugin-group-icons": "^1.6.0"
+  }
+}
