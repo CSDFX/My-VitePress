@@ -1,9 +1,9 @@
 {
+  "type": "module",
   "devDependencies": {
     "@types/dom-view-transitions": "^1.0.6",
     "vitepress": "^1.6.3",
-    "vitepress-sidebar": "^1.31.1",
-    "type": "module"
+    "vitepress-sidebar": "^1.31.1"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
