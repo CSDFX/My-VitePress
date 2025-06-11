@@ -9,7 +9,7 @@ export default defineConfig({
   description: "A VitePress Site",
   lang: 'zh-CN',
   cleanUrls:true,
-  base: '/docs',
+  base: '/',
   lastUpdated: true,
 
   markdown: {
