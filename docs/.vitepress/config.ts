@@ -9,12 +9,18 @@ export default defineConfig({
   description: "A VitePress Site",
   lang: 'zh-CN',
   cleanUrls:true,
-  base: '/',
+  base: '/docs',
   lastUpdated: true,
 
   markdown: {
+    image: {
+      // 开启图片懒加载
+      lazyLoading: true
+    },
+    
     //行号显示
     lineNumbers: true,
+
 
     // toc显示一级标题
     toc: {level: [1,2,3]},
@@ -55,12 +61,9 @@ export default defineConfig({
 
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
       {
-        text: 'Guides',
-        items: [
-          { text: 'Linux', link: '/linux/前言' }
-        ]
+        text: 'Linux',
+        link: '/linux/前言'
     },
     ],
 
@@ -87,6 +90,14 @@ export default defineConfig({
             { text: '镜像源', link: '/linux/package/repo' },
             { text: 'Package Manager', link: '/linux/package/PackageManager' }
           ]
+        },
+        {
+          text: 'Editors',
+          collapsed: false,
+          items: [
+            { text: 'Vi-Vim', link: '/linux/editors/vi-vim' },
+            { text: 'Nano', link: '/linux/editors/nano' }
+          ]
         }
       ],
       // '/guide/windows/': [
@@ -101,10 +112,9 @@ export default defineConfig({
       //   }
       // ]
     },
-    
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/CSDFX/My-VitePress' }
     ]
   }
 })
